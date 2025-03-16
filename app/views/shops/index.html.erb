@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Shops</h1>
+<h1><%= t('shops') %></h1>
 
 <%= form_tag('/shops', method: 'get') do %>
 <%= label_tag(:name_key, 'Search name:') %>
@@ -13,9 +13,9 @@
 <table class='table table-striped table-hover'>
   <thead>
     <tr>
-      <th>Category</th>
-      <th>Name</th>
-      <th>Address</th>
+      <th><%= t('category') %></th>
+      <th><%= t('name') %></th>
+      <th><%= t('address') %></th>
     </tr>
   </thead>
 
